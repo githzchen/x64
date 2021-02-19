@@ -1,7 +1,0 @@
-
-config unblockmusic
-	option port '5200'
-	option enable_ipset '1'
-	option enabled '1'
-	option musicapptype 'kuwo'
-
