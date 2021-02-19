@@ -1,0 +1,5 @@
+
+config setting 'config'
+	option port '8886'
+	option enabled '1'
+

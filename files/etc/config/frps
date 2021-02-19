@@ -1,0 +1,14 @@
+
+config frps 'main'
+	option server 'frps'
+	option client_file '/usr/bin/frps'
+	option tcp_mux 'true'
+	option enabled '1'
+	option token '784533'
+	option tls_only 'false'
+	option bind_port '8081'
+	option dashboard_port '8005'
+	option dashboard_user 'admin'
+	option dashboard_pwd '784533'
+	option dashboard_addr '0.0.0.0'
+

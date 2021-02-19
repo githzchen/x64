@@ -1,0 +1,147 @@
+############ 第1步 ############
+## 在命令行中使用 echo $PATH 命令查看你的系统PATH是不是和下面一样，如果不一样，则用你的PATH代替下一行中PATH的值：
+PATH=/usr/bin/node:/usr/bin/npm:/usr/bin/git:/usr/bin/perl:/usr/sbin:/usr/bin:/sbin:/bin
+
+############ 第2步 ############
+## 依次输入which node、which npm、which git、which perl，检查node、npm、git、perl的路径，如路径不在刚刚修改的PATH中，则将路径添加在PATH最前面，并以冒号分隔
+
+############ 第3步 ############
+## 命令行中输入 crontab -l ，将输出内容添加在本行之下（如反馈没有定时任务则可以跳过本步）：
+
+
+
+############ 第4步 ############
+## 修改以下所有脚本路径和cron时间。
+
+# 更新lxk0301大佬的js脚本和EvineDeng的shell脚本，并替换相关参数：
+## 55 * * * * bash /opt/jd/git_pull.sh >> /opt/jd/log/git_pull.log 2>&1
+
+# 删除 RmLogDaysAgo 指定天数以前的旧日志，本行为不记录日志：
+57 13 * * * bash /opt/jd/rm_log.sh >/dev/null 2>&1
+
+# 导出所有互助码清单，日志在log/export_sharecodes下：
+48 5 * * * bash /opt/jd/export_sharecodes.sh
+
+# 重启挂机脚本：
+33 13 * * * bash /opt/jd/jd.sh hangup
+
+# 每3天的23:50分清理一次日志
+50 23 */3 * * rm -rf /scripts/logs/*.log
+
+##############短期活动##############
+#年货节(活动时间：2021年1月9日-2021年2月9日)
+#京东炸年兽集爆竹(活动时间:2021-1-18至2021-2-11)怕有遗漏故多运行几次
+#专门收集每秒产生的爆竹(1小时运行一次)
+#京东炸年兽签到任务🧨
+#京东炸年兽AR
+#京东炸年兽小程序
+
+#京东神仙书院(活动时间:2021-1-20至2021-2-5)
+
+#京东神仙书院答题(活动时间:2021-1-20至2021-2-5)
+
+##############长期活动##############
+# 签到
+4 0,9 * * * bash /opt/jd/jd.sh jd_bean_sign
+# 东东超市兑换奖品
+0,30 0 * * * bash /opt/jd/jd.sh jd_blueCoin
+# 摇京豆
+0 0 * * * bash /opt/jd/jd.sh jd_club_lottery
+# 东东农场
+5 6-18/6 * * * bash /opt/jd/jd.sh jd_fruit
+# 宠汪汪
+15 */2 * * * bash /opt/jd/jd.sh jd_joy
+# 宠汪汪喂食
+15 */1 * * * bash /opt/jd/jd.sh jd_joy_feedPets
+# 宠汪汪积分兑换奖品
+# 宠汪汪偷好友积分与狗粮
+0 6 * * * bash /opt/jd/jd.sh jd_joy_steal
+30 11 * * * bash /opt/jd/jd.sh jd_joy_steal
+0 17 * * * bash /opt/jd/jd.sh jd_joy_steal
+# 摇钱树
+0 */2 * * * bash /opt/jd/jd.sh jd_moneyTree
+# 东东萌宠
+5 6-18/6 * * * bash /opt/jd/jd.sh jd_pet
+# 京东种豆得豆
+0 7-22/1 * * * bash /opt/jd/jd.sh jd_plantBean
+# 京东全民开红包
+1 1 * * * bash /opt/jd/jd.sh jd_redPacket
+# 进店领豆
+10 0 * * * bash /opt/jd/jd.sh jd_shop
+# 京东天天加速
+8 */3 * * * bash /opt/jd/jd.sh jd_speed
+# 东东超市
+11 1-23/5 * * * bash /opt/jd/jd.sh jd_superMarket
+# 取关京东店铺商品
+55 23 * * * bash /opt/jd/jd.sh jd_unsubscribe
+# 京豆变动通知
+0 10 * * * bash /opt/jd/jd.sh jd_bean_change
+# 京东抽奖机
+11 1 * * * bash /opt/jd/jd.sh jd_lotteryMachine
+# 京东排行榜
+11 9 * * * bash /opt/jd/jd.sh jd_rankingList
+# 天天提鹅
+18 * * * * bash /opt/jd/jd.sh jd_daily_egg
+# 金融养猪
+12 * * * * bash /opt/jd/jd.sh jd_pigPet
+# 点点券
+20 0,20 * * * bash /opt/jd/jd.sh jd_necklace
+# 京喜工厂
+## 20 * * * * bash /opt/jd/jd.sh jd_dreamFactory
+# 东东小窝
+16 6,23 * * * bash /opt/jd/jd.sh jd_small_home
+# 东东工厂
+36 * * * * bash /opt/jd/jd.sh jd_jdfactory
+# 十元街
+36 8,18 * * * bash /opt/jd/jd.sh jd_syj
+# 京东快递签到
+23 1 * * * bash /opt/jd/jd.sh jd_kd
+# 京东汽车(签到满500赛点可兑换500京豆)
+0 0 * * * bash /opt/jd/jd.sh jd_car
+# 领京豆额外奖励(每日可获得3京豆)
+33 4 * * * bash /opt/jd/jd.sh jd_bean_home
+# 京东直播(每日18豆)
+10-20/5 11 * * * bash /opt/jd/jd.sh jd_live
+# 微信小程序京东赚赚
+10 11 * * * bash /opt/jd/jd.sh jd_jdzz
+# 宠汪汪邀请助力
+10 10,11 * * * bash /opt/jd/jd.sh jd_joy_run
+# 注销京东已开的店铺会员，不是注销京东plus会员，个别店铺无法注销
+# crazyJoy自动每日任务
+10 7 * * * bash /opt/jd/jd.sh jd_crazy_joy
+# 京东汽车旅程赛点兑换金豆
+0 0 * * * bash /opt/jd/jd.sh jd_car_exchange
+# 导到所有互助码
+47 7 * * * bash /opt/jd/jd.sh jd_get_share_code
+# 口袋书店
+7 8,12,18 * * * bash /opt/jd/jd.sh jd_bookshop
+# 京喜农场
+0 9,12,18 * * * bash /opt/jd/jd.sh jd_jxnc
+# 签到领现金
+27 7 * * * bash /opt/jd/jd.sh jd_cash
+# 京喜app签到
+39 7 * * * bash /opt/jd/jd.sh jx_sign
+# 京东家庭号(暂不知最佳cron)
+# */20 * * * * bash /opt/jd/jd.sh jd_family
+# 闪购盲盒
+27 8 * * * bash /opt/jd/jd.sh jd_sgmh
+# 源头好物红包
+# 京东手机年终奖
+# 盲盒抽京豆
+# 京东秒秒币
+10 7 * * * bash /opt/jd/jd.sh jd_ms
+# 小鸽有礼
+5 7 * * * bash /opt/jd/jd.sh jd_xg
+# 京东超级盒子
+
+##############红包雨##############
+
+
+# 其它任务
+1 0 * * * /usr/share/jd-dailybonus/newapp.sh -w
+0 23 * * * /usr/share/jd-dailybonus/newapp.sh -u
+0 6 * * * /usr/share/adbyby/adblock.sh > /tmp/adupdate.log 2>&1
+
+34 9 * * * bash /opt/jd/jd.sh jd_xgyl
+#20 9 * * 6 bash /opt/jd/jd.sh jd_delCoupon
+0 9,12,20,21 2-22 2 * bash /opt/jd/jd.sh jd_global
