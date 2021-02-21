@@ -101,7 +101,6 @@ PATH=/usr/bin/node:/usr/bin/npm:/usr/bin/git:/usr/bin/perl:/usr/sbin:/usr/bin:/s
 # 领京豆额外奖励(每日可获得3京豆)
 33 4 * * * bash /opt/jd/jd.sh jd_bean_home
 # 京东直播(每日18豆)
-10-20/5 11 * * * bash /opt/jd/jd.sh jd_live
 # 微信小程序京东赚赚
 10 11 * * * bash /opt/jd/jd.sh jd_jdzz
 # 宠汪汪邀请助力
@@ -131,7 +130,6 @@ PATH=/usr/bin/node:/usr/bin/npm:/usr/bin/git:/usr/bin/perl:/usr/sbin:/usr/bin:/s
 # 京东秒秒币
 10 7 * * * bash /opt/jd/jd.sh jd_ms
 # 小鸽有礼
-5 7 * * * bash /opt/jd/jd.sh jd_xg
 # 京东超级盒子
 
 ##############红包雨##############
@@ -145,3 +143,8 @@ PATH=/usr/bin/node:/usr/bin/npm:/usr/bin/git:/usr/bin/perl:/usr/sbin:/usr/bin:/s
 34 9 * * * bash /opt/jd/jd.sh jd_xgyl
 #20 9 * * 6 bash /opt/jd/jd.sh jd_delCoupon
 0 9,12,20,21 2-22 2 * bash /opt/jd/jd.sh jd_global
+1 7,12,19 * * * bash /opt/jd/jd.sh jd_beauty
+5 7,23 19-25 2 * bash /opt/jd/jd.sh jd_nzmh
+1 0,23 * * * bash /opt/jd/jd.sh jd_price
+5 0,23 * * * bash /opt/jd/jd.sh jd_speed_redpocke
+1 1,6 * * * bash /opt/jd/jd.sh jd_speed_sign
