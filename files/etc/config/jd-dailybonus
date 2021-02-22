@@ -12,7 +12,7 @@ config global
 	option remote_url 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js'
 	option auto_update_time '23'
 	option serverurl 'scu'
-	option cookie 'pt_key=AAJgCVXNADAC3D_-JadMce526-AzZH5D1MKF14vUm55Ub4gvK9bgtnX6LbqCNFCaaXmudncb360; pt_pin=hz_chen;'
-	option cookie2 'pt_key=AAJgCiGxADDgiX4D6Q8hmhn_L5q9jaPkw6BPMpwNW6iW2LTwSJn7WrXLNuD9heuXl44nG0T5Fxo;pt_pin=jd_7beda182b8334;'
-	option version '1.92'
+	option version '1.93'
+	option cookie 'pt_key=AAJgM87UADAF9yfLU1IIS9UBZ9-WZ9eI5syEeGioIaz-OifNfvJI5EtNi9_Yh-m9MuiBDOkrGQs;pt_pin=hz_chen;'
+	option cookie2 'pt_key=AAJgM8-tADCH4Me_CyB5Qs83m_b2TJXEyZvNcqVaNeHIreVJut1Q6ne1_pZBV3FmcL9MXm41dlM;pt_pin=jd_7beda182b8334;'
 
