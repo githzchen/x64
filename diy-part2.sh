@@ -16,5 +16,7 @@
 rm -rf package/lean/luci-theme-argon
 cd files
 ln -s /opt/jd jd
-cd etc
+mkdir root
+mkdir root/.config
+cd root/.config
 ls -s /opt/verysync verysync
