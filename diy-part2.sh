@@ -14,9 +14,3 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 rm -rf package/lean/luci-theme-argon
-cd files
-ln -s jd /opt/jd
-mkdir root
-mkdir root/.config
-cd root/.config
-ls -s verysync /opt/verysync
