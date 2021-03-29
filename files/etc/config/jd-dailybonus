@@ -13,5 +13,5 @@ config global
 	option version '1.98'
 	option auto_run_time_m '0'
 	list Cookies 'pt_key=AAJgW9A2ADBTMq49dtrF1flG0Ii0rEnYMdfyDLF65ovdI5VtAq6VndJlb-i8JT1u2-OKR-te8G8;pt_pin=hz_chen;'
-	list Cookies 'pt_key=AAJgN16jADAEAnK8k70WT0nBR-U_gUt0gvmOb6VzX2Fpf-WB9AaGp8neBl68gtPUwqsLkNx8M8M;pt_pin=%E5%A4%A9%E9%BE%99%E5%85%AB1%E9%83%A8;'
+	list Cookies 'pt_key=AAJgYRdDADCNip8PSJNCDs-jv_HCcbnA8_Gl3PHwZutMJok8Suvo8LDEzXsrp0dJYi3vbjoGSTk;pt_pin=%E5%A4%A9%E9%BE%99%E5%85%AB1%E9%83%A8;'
 
