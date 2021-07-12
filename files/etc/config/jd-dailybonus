@@ -10,8 +10,8 @@ config global
 	option auto_run_time_h '0'
 	option serverurl 'sct'
 	option serverchan 'SCU123388T95cdbdd41fd6c074b9a3186566372e6e5fa2ac9b37a1b'
-	option version '1.98'
 	option auto_run_time_m '0'
-	list Cookies 'pt_key=AAJgW9A2ADBTMq49dtrF1flG0Ii0rEnYMdfyDLF65ovdI5VtAq6VndJlb-i8JT1u2-OKR-te8G8;pt_pin=hz_chen;'
-	list Cookies 'pt_key=AAJgYRdDADCNip8PSJNCDs-jv_HCcbnA8_Gl3PHwZutMJok8Suvo8LDEzXsrp0dJYi3vbjoGSTk;pt_pin=%E5%A4%A9%E9%BE%99%E5%85%AB1%E9%83%A8;'
+	option version '2.0.5'
+	list Cookies 'pt_key=AAJg65FTADDT1HIY9fiadfseKALIQ-62TbTrh-V3UtjrfC-2rQekyDAUMiBEiOTjCevkduDFu70;pt_pin=hz_chen;'
+	list Cookies 'pt_key=AAJg5N7cADDilnVAT_ZTQRlMqNLxo2ll-ODDg61q9gbBaKMbmjItVsZ5rlycE-_caaQPWP-5FKQ;pt_pin=jd_7beda182b8334;'
 
