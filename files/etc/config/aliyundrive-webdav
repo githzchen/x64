@@ -9,8 +9,8 @@ config server
 	option no_trash '0'
 	option read_only '0'
 	option enable '1'
-	option refresh_token '247903dee3874e718613a190de8787a9'
 	option cache_ttl '60'
 	option auth_user 'admin'
 	option auth_password '784533'
+	option refresh_token '24e409d65ebf4934b8de429dbd4507d9'
 

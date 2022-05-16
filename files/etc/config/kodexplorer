@@ -5,6 +5,9 @@ config global
 	option post_max_size '2048M'
 	option upload_max_filesize '2048M'
 	option storage_device_path '/opt'
-	option project_directory '/opt/kodexplorer'
 	option enable '1'
+	option https '0'
+	option ipv6 '1'
+	list open_basedir '/opt'
+	option project_directory '/opt/kodbox'
 
