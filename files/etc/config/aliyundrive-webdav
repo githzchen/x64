@@ -12,5 +12,5 @@ config server
 	option cache_ttl '60'
 	option auth_user 'admin'
 	option auth_password '784533'
-	option refresh_token '24e409d65ebf4934b8de429dbd4507d9'
+	option refresh_token '17a82e51be934441b9babfd2c6b4fa5d'
 
