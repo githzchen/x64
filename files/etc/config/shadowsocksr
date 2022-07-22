@@ -13,10 +13,11 @@ config global
 	option switch_try_count '3'
 	option gfwlist_url 'https://cdn.jsdelivr.net/gh/YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt'
 	option chnroute_url 'https://ispip.clang.cn/all_cn.txt'
-	option nfip_url 'https://cdn.jsdelivr.net/gh/QiuSimons/Netflix_IP/NF_only.txt'
-	option adblock_url 'https://anti-ad.net/anti-ad-for-dnsmasq.conf'
 	option run_mode 'gfw'
-	option global_server 'cfg064a8f'
+	option default_packet_encoding 'xudp'
+	option netflix_enable '0'
+	option adblock '0'
+	option global_server 'cfg084a8f'
 
 config server_subscribe
 	option proxy '0'
@@ -36,8 +37,8 @@ config access_control
 	list Interface 'lan'
 
 config socks5_proxy
-	option server 'nil'
 	option local_port '1080'
+	option server 'same'
 
 config server_global
 	option enable_server '1'
@@ -46,20 +47,20 @@ config servers
 	option type 'v2ray'
 	option server_port '443'
 	option transport 'ws'
-	option tls '1'
 	option mux '0'
 	option local_port '1234'
-	option insecure '1'
-	option fingerprint 'randomized'
-	option tls_host 'tk.sfrt.xyz'
 	option vmess_id 'bb1c3c65-98bd-4873-8284-238a1aa39600'
-	option switch_enable '1'
-	option alias 'EC2-JP'
 	option v2ray_protocol 'vless'
 	option vless_encryption 'none'
 	option server 'tk.sfrt.ltd'
 	option ws_path '/icmlws?ed=2048'
 	option ip '52.195.11.34'
+	option alias 'EC2-tk'
+	option ws_host 'tk.sfrt.ltd'
+	option ws_ed '2048'
+	option ws_ed_header 'Sec-WebSocket-Protocol'
+	option packet_encoding 'none'
+	option switch_enable '0'
 
 config server_config
 	option enable '1'
@@ -67,4 +68,19 @@ config server_config
 	option server_port '1080'
 	option username 'jd'
 	option password '784533'
+
+config servers
+	option switch_enable '0'
+	option type 'v2ray'
+	option server 'osk.sfrt.ltd'
+	option server_port '443'
+	option vmess_id 'bb1c3c65-98bd-4873-8284-238a1aa39600'
+	option transport 'tcp'
+	option tcp_guise 'none'
+	option mux '0'
+	option local_port '1234'
+	option alias 'EC2-osk'
+	option ip '13.208.120.89'
+	option v2ray_protocol 'vless'
+	option vless_encryption 'none'
 
