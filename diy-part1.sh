@@ -15,4 +15,4 @@
 
 # Add a feed source
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-
+sed -i '$a src-git  https://github.com/githzchen/openwrt-package' feeds.conf.default
