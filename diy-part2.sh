@@ -15,4 +15,5 @@
 
 # rm -rf feeds/packages/luci/themes/luci-theme-argon
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+sed -i '0,/bootstrap/{s/bootstrap/argon/}' feeds/luci/modules/luci-base/root/etc/config/luci
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-app-argon-config
